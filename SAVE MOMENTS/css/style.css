@@ -33,7 +33,7 @@ body {
 
 .background {
     text-align: center;
-    background-image: url(../img/imeges.png);
+    background-image: url("../img/imeges.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
