@@ -1,5 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
+
+
 }
 
 .container {
@@ -65,6 +67,8 @@ body {
     padding: 133px 0;
     background: rgba(26, 110, 136, 0.71);
 
+
+
 }
 
 .description__text {
@@ -74,4 +78,144 @@ body {
     color: #FFFFFF;
     margin: 0 auto;
 
+
+}
+
+
+
+
+.paragraph {
+    position: relative;
+}
+
+
+.paragraph__list {
+    padding-top: 221px;
+}
+
+.paragraph__item {
+    padding-top: 216px;
+    margin-bottom: 123px;
+}
+
+.paragraph__text,
+.paragraph-text {
+    max-width: 696px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+}
+
+
+.paragraph__item-three::before {
+    content: '';
+    width: 178px;
+    height: 121px;
+    background: #BFDEFB;
+    position: absolute;
+    left: -70px;
+    top: 100px;
+}
+
+.paragraph__item-one::before {
+    content: '';
+    width: 178px;
+    height: 121px;
+    background: #BFDEFB;
+    position: absolute;
+    left: -70px;
+    top: 346px;
+}
+
+.paragraph__item-two::before {
+    content: '';
+    width: 178px;
+    height: 121px;
+    background: #BFDEFB;
+    position: absolute;
+    right: -70px;
+    top: 235px;
+}
+
+.paragraph-text {
+    position: relative;
+}
+
+.paragraph-text::before {
+    content: '';
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #5C98AB;
+    left: 0px;
+    transform: translate(-50%, -100%);
+
+}
+
+.paragraph-text::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #BFDEFB;
+    right: -150px;
+    bottom: -70px;
+
+}
+
+.form__section {
+    max-width: 647px;
+    margin: 123px auto 123px;
+}
+
+.input__wrapper {
+    position: relative;
+    margin-bottom: 41px;
+}
+
+.input {
+    width: 100%;
+    height: 96px;
+    padding: 36px 0 11px 31px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.label {
+    position: absolute;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    left: 31px;
+    top: 14px;
+
+}
+
+.input::placeholder {
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
+
+}
+
+.form__button {
+    width: 100%;
+    height: 92px;
+    background: #5C98AB;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+    border: none;
 }
