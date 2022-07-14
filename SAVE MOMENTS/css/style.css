@@ -98,8 +98,8 @@ body {
     margin-bottom: 123px;
 }
 
-.paragraph__text,
-.paragraph-text {
+.paragraph__square-tex,
+.paragraph__circle-text {
     max-width: 696px;
     margin: 0 auto;
     font-family: 'Roboto';
@@ -110,42 +110,33 @@ body {
     color: #000000;
 }
 
-
-.paragraph__item-three::before {
-    content: '';
+.square {
     width: 178px;
     height: 121px;
     background: #BFDEFB;
     position: absolute;
-    left: -70px;
+}
+
+.square1 {
+    left: 0;
     top: 100px;
 }
 
-.paragraph__item-one::before {
-    content: '';
-    width: 178px;
-    height: 121px;
-    background: #BFDEFB;
-    position: absolute;
-    left: -70px;
+.square2 {
+    left: 0;
     top: 346px;
 }
 
-.paragraph__item-two::before {
-    content: '';
-    width: 178px;
-    height: 121px;
-    background: #BFDEFB;
-    position: absolute;
-    right: -70px;
+.square3 {
+    right: 0;
     top: 235px;
 }
 
-.paragraph-text {
+.paragraph__circle-text {
     position: relative;
 }
 
-.paragraph-text::before {
+.paragraph__circle-text::before {
     content: '';
     position: absolute;
     width: 58px;
@@ -157,7 +148,7 @@ body {
 
 }
 
-.paragraph-text::after {
+.paragraph__circle-text::after {
     content: '';
     position: absolute;
     width: 120px;
