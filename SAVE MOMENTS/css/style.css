@@ -177,8 +177,6 @@ body {
     border: 1px solid #000000;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 32px;
-
 }
 
 .label {
@@ -192,7 +190,8 @@ body {
 
 }
 
-.input::placeholder {
+.input::placeholder,
+.input {
 
     font-weight: 400;
     font-size: 36px;
