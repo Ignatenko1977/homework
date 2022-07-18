@@ -1,0 +1,51 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    gap: 20px;
+}
+
+.item:nth-child(1),
+.item:nth-child(10) {
+    grid-column: span 3;
+}
+
+.item:nth-child(1),
+.item:nth-child(5) {
+    grid-row: span 2;
+}
+
+.item:nth-child(2),
+.item:nth-child(3),
+.item:nth-child(7) {
+    grid-column: span 2;
+}
+
+.item:nth-child(4) {
+    grid-column: span 5;
+}
+
+.color1 {
+    background: #FF68D5;
+}
+
+.color2,
+.color3,
+.color5,
+.color7 {
+    background: #23ECF9;
+}
+
+.color4 {
+    background: #F80000;
+}
+
+.color6,
+.color8,
+.color9 {
+    background: #330BD0;
+}
+
+.color10 {
+    background: #8DFF65;
+}
