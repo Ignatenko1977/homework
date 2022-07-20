@@ -234,6 +234,10 @@ body {
     ;
 }
 
+.button__learn:hover {
+    color: #FFFFFF;
+}
+
 .categories {
     margin-bottom: 143px;
     background: rgba(0, 161, 198, .07);
@@ -360,16 +364,20 @@ body {
     width: 100%;
 }
 
-.better__text {
+.better__info-text {
     font-size: 18px;
     line-height: 26px;
     color: #2B292D;
 }
 
-.better__text-paragraph {
+.better__info-link {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    text-decoration-line: underline;
     color: #3040C4;
+}
+
+.better__info-link:hover {
+    color: #5463e7;
+    transition: 0.7s;
 }
