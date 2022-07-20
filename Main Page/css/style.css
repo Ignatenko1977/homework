@@ -154,7 +154,7 @@ body {
 .wrapper-company__photos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 207px);
+    grid-template-rows: repeat(3, 1fr);
     gap: 41px 50px;
 }
 
@@ -163,6 +163,10 @@ body {
 .wrapper__photo:nth-child(4),
 .wrapper__photo:nth-child(3) {
     grid-row: span 2;
+}
+
+.info {
+    background: #F4F5F7;
 }
 
 .information {
@@ -232,6 +236,8 @@ body {
 
 .categories {
     margin-bottom: 143px;
+    background: #00A1C6;
+
 }
 
 .wrapper__categories {
@@ -256,7 +262,7 @@ body {
     font-size: 22px;
     line-height: 28px;
     color: #2B292D;
-    margin-top: 22px;
+    margin: 22px 0 33px;
 }
 
 .categories__item:hover .item__text {
