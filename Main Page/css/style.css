@@ -379,3 +379,164 @@ body {
     color: #5463e7;
     transition: 0.7s;
 }
+
+@media screen and (max-width:1200px) {
+    .container {
+        max-width: 1040px;
+    }
+
+    .header__ul {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width:1090px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .logo__text {
+        display: none;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .flex__inbox-column {
+        flex-direction: column-reverse;
+    }
+
+    .inbox {
+        padding: 56px 0 69px;
+    }
+
+    .inbox {
+        text-align: center;
+    }
+
+    .info__title {
+        margin: 0 auto 14px;
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .info__text {
+        max-width: 429px;
+        margin: 0 auto 41px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .inbox__response {
+        margin: 0 auto 75px;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container {
+        max-width: 500px;
+    }
+
+    .header {
+        padding: 25px 0;
+    }
+
+    .inbox {
+        padding: 40px 0;
+    }
+
+    .inbox__response {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .container {
+        max-width: 430px;
+    }
+
+    .info__pretitle {
+        margin-bottom: 20px;
+    }
+
+    .info__title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        max-width: 310px;
+    }
+
+    .container-images__img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .container {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .container {
+        max-width: 290px;
+    }
+
+    .header {
+        background-color: #fff;
+        padding: 8px 0;
+    }
+
+    .container-images {
+        margin-bottom: 32px;
+    }
+
+    .container-images__img {
+        max-width: 290px;
+        width: 100%;
+
+    }
+
+    .logo img {
+        margin-right: 13px;
+    }
+
+    .inbox {
+        padding: 50px 0 48px;
+    }
+
+    .flex__inbox-column {
+        flex-direction: column;
+    }
+
+    .info {
+        text-align: start;
+    }
+
+    .info__pretitle {
+        margin-bottom: 17px;
+    }
+
+    .info__title {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.357143px;
+        margin-bottom: 18px;
+    }
+
+    .info__text {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 40px;
+    }
+
+    .inbox__response {
+        padding: 30px 20px;
+    }
+}
