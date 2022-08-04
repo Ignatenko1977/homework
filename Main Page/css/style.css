@@ -7,6 +7,7 @@ body {
 }
 
 
+
 .header {
     background-color: #F3C6BD;
     padding: 57px 0 58px;
@@ -21,6 +22,34 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.button {
+    width: 160px;
+    height: 48px;
+    border: none;
+    background: #3040C4;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 13px;
+    color: #FFFFFF;
+    box-shadow: 0 9px #999;
+}
+
+.check {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+.check:not(:last-of-type) {
+    margin-bottom: 4px;
+}
+
+.checkbox,
+.check-wrapper {
+    display: none;
 }
 
 .main {
@@ -125,20 +154,6 @@ body {
     background-color: yellow;
     left: 0;
     bottom: 0;
-}
-
-
-.button {
-    width: 160px;
-    height: 48px;
-    border: none;
-    background: #3040C4;
-    border-radius: 2px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 13px;
-    color: #FFFFFF;
-    box-shadow: 0 9px #999;
 }
 
 .button:hover {
@@ -281,9 +296,11 @@ body {
 
 .button__learn {
     color: #000000;
-    background: #FFFFFF;
-    ;
+    background-color: #FFFFFF;
+
 }
+
+
 
 .button__learn:hover {
     color: #FFFFFF;
@@ -648,6 +665,69 @@ input {
         padding-bottom: 25px;
 
     }
+
+    .menu {
+        position: relative;
+    }
+
+    .checkbox,
+    .check-wrapper {
+        display: block;
+    }
+
+    .check {
+        transition: 500ms;
+    }
+
+    .checkbox {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .check-wrapper {
+        position: relative;
+        z-index: 1;
+    }
+
+    .checkbox:checked~.check-wrapper>.check:first-of-type {
+        transform: rotate(35deg) translate(2px, -1px);
+        transform-origin: bottom left;
+    }
+
+    .checkbox:checked~.check-wrapper>.check:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .checkbox:checked~.check-wrapper>.check:last-of-type {
+        transform: rotate(-35deg) translate(7px, -12px);
+        transform-origin: bottom right;
+    }
+
+    .checkbox:checked~.header__nav {
+        display: block;
+        position: fixed;
+        background: #F3C6BD;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .header__ul {
+        flex-direction: column;
+    }
+
+
+
+
 
     .flex__what {
         flex-direction: column;
