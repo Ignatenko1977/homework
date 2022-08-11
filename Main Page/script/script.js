@@ -4,6 +4,7 @@ $('.about-items > div').on('click', function () {
     $(this).next('.about-text').slideToggle(300);
 })
 $('.features-items > div').on('click', function () {
-    $(this).parent('.features-items,features-title ').toggleClass('changes-color')
+    $(this).parent('.features-items').toggleClass('changes-color');
     $(this).next('.features-text').slideToggle(300);
+    $(this).children('.features-items__title').children('p').toggleClass('blue-color')
 })
