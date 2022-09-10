@@ -25,8 +25,25 @@ $('.private-spaces').slick({
     prevArrow: $('.spaces-prev'),
     nextArrow: $('.spaces-next'),
     dots: true,
-});
+    responsive: [
+        {
+            breakpoint: 1090,
+            settings: {
+                slidesToShow: 2,
 
+            }
+
+        },
+        {
+            breakpoint: 551,
+            settings: {
+                slidesToShow: 1,
+
+            }
+
+        }
+    ]
+});
 
 
 $('.frispes-gallery__img').slick({
@@ -37,6 +54,17 @@ $('.frispes-gallery__img').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     speed: 500,
+    responsive: [
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+
+            }
+
+        }
+
+    ]
 
 })
 
@@ -46,6 +74,34 @@ $('.reviews-flex').slick({
     nextArrow: $('.reviews-next'),
     slidesToShow: 2,
     slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 1,
+
+            }
+        }
+
+    ]
+});
+
+// $(window).on('resize', function () {
+//     if ($(window).width() < 850) {
+//         $('.frispes-flex').slick({
+//             Infinite: false,
+//             slidesToShow: 1,
+//         })
+//     }
+// });
+
+$('#menuToggle #toggleCheckbox').change(function () {
+    if (this.checked) {
+        $('body').css({ 'overflow': "hidden" })
+    }
+    else {
+        $('body').css({ 'overflow': "visible" })
+    }
 });
 
 

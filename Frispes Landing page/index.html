@@ -27,7 +27,13 @@
     <header class="header">
         <div class="container flex">
             <h6 class="logo-title" id="frispes-link">Frispes.</h6>
-            <menu class="menu">
+            <menu class="menu " id="menuToggle">
+                <input type="checkbox" class="checkbox" id="toggleCheckbox">
+                <div class="check-wrapper">
+                    <div class="check"></div>
+                    <div class="check"></div>
+                    <div class="check"></div>
+                </div>
                 <nav class="header-nav flex">
                     <ul class="header-ul flex">
                         <li class="header-li"><a class="header__link" href="#">Home</a></li>
@@ -121,7 +127,7 @@
             <div class="private-spaces  ">
                 <div class="slider">
                     <div class="slider-img">
-                        <img src="./images/spaces/Rectangle 11.png" alt="images">
+                        <img class="slider-images" src="./images/spaces/Rectangle 11.png" alt="images">
                         <p class="private-text">Custom Office</p>
                         <div class="slider-content">
                             <img class="slider-content__img" src="./images/spaces/Mask Group.png" alt="icon">
@@ -137,7 +143,7 @@
                 </div>
                 <div class="slider">
                     <div class="slider-img">
-                        <img src="./images/spaces/image 5.png" alt="images">
+                        <img class="slider-images" src="./images/spaces/image 5.png" alt="images">
                         <p class="private-text">Working with team</p>
                         <div class="slider-content">
                             <img class="slider-content__img" src="./images/spaces/Mask Group.png" alt="icon">
@@ -153,7 +159,7 @@
                 </div>
                 <div class="slider">
                     <div class="slider-img">
-                        <img src="./images/spaces/Rectangle 11.png" alt="images">
+                        <img class="slider-images" src="./images/spaces/Rectangle 11.png" alt="images">
                         <p class="private-text">Custom Office</p>
                         <div class="slider-content">
                             <img class="slider-content__img" src="./images/spaces/Mask Group.png" alt="icon">
@@ -169,7 +175,7 @@
                 </div>
                 <div class="slider">
                     <div class="slider-img">
-                        <img src="./images/spaces/image 5.png" alt="images">
+                        <img class="slider-images" src="./images/spaces/image 5.png" alt="images">
                         <p class="private-text">Working with team</p>
                         <div class="slider-content">
                             <img class="slider-content__img" src="./images/spaces/Mask Group.png" alt="icon">
@@ -185,7 +191,7 @@
                 </div>
                 <div class="slider">
                     <div class="slider-img">
-                        <img src="./images/spaces/Rectangle 11.png" alt="images">
+                        <img class="slider-images" src="./images/spaces/Rectangle 11.png" alt="images">
                         <p class="private-text">Custom Office</p>
                         <div class="slider-content">
                             <img class="slider-content__img" src="./images/spaces/Mask Group.png" alt="icon">
@@ -201,7 +207,7 @@
                 </div>
                 <div class="slider">
                     <div class="slider-img">
-                        <img src="./images/spaces/image 5.png" alt="images">
+                        <img class="slider-images" src="./images/spaces/image 5.png" alt="images">
                         <p class="private-text">CWorking with team</p>
                         <div class="slider-content">
                             <img class="slider-content__img" src="./images/spaces/Mask Group.png" alt="icon">
@@ -219,8 +225,8 @@
         </div>
     </section>
     <section class="frispes">
-        <div class="container frispes-felx ">
-            <div class="frispes-content">
+        <div class="container frispes-flex ">
+            <div class="frispes-content ">
                 <ul class="frispes-list">
                     <li class="frispes-item">
                         <div class="frispes-item__img">
@@ -278,7 +284,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="frispes-info">
+            <div class="frispes-info ">
                 <p class=" pretitle frispes-pretitle">
                     Why Frispes
                 </p>
@@ -314,7 +320,7 @@
                     </ul>
                 </div>
                 <div>
-                    <img src="./images/facilities/Rectangle 17.png" alt="icons">
+                    <img class="facilities-img" src="./images/facilities/Rectangle 17.png" alt="icons">
                 </div>
             </div>
         </div>
@@ -539,7 +545,7 @@
             <div class="news-wrapper">
                 <div class="news-one">
                     <div>
-                        <img src="./images/news/logonews1.png" alt="images">
+                        <img class="news-img" src="./images/news/logonews1.png" alt="images">
                     </div>
                     <div class="news-response">
                         <h5 class="news-response__title">Google I / O 2020 news update</h5>
@@ -558,7 +564,7 @@
                 </div>
                 <div class="news-two">
                     <div>
-                        <img src="./images/news/logonews3.png" alt="logo">
+                        <img class="news-img" src="./images/news/logonews3.png" alt="logo">
                     </div>
                     <div>
                         <h6 class="news-two__title">Minimal workspace for inspirations</h6>
@@ -567,7 +573,7 @@
                 </div>
                 <div class="news-three">
                     <div>
-                        <img src="./images/news/logonews4.png" alt="logo">
+                        <img class="news-img" src="./images/news/logonews4.png" alt="logo">
                     </div>
                     <div>
                         <h6 class="news-three__title">Does productivity increase when working remotely ? </h6>
@@ -576,7 +582,7 @@
                 </div>
                 <div class="news-four">
                     <div>
-                        <img src="./images/news/logonews5.png" alt="logo">
+                        <img class="news-img" src="./images/news/logonews5.png" alt="logo">
                     </div>
                     <div>
                         <h6 class="news-four__title">Morning routine to boost your mood</h6>
@@ -585,7 +591,7 @@
                 </div>
                 <div class="news-five">
                     <div>
-                        <img src="./images/news/logonews6.png" alt="logo">
+                        <img class="news-img" src="./images/news/logonews6.png" alt="logo">
                     </div>
                     <div>
                         <h6 class="news-five__title">Minimal workspace for inspirations</h6>
@@ -615,7 +621,7 @@
         </div>
     </section>
     <footer id="contact" class="footer">
-        <div class="container footer-wrapper">
+        <div class="container  footer-wrapper">
             <div class="footer-frispes">
                 <h2 class="footer-frispes__title">
                     Frispes
@@ -702,7 +708,7 @@
     </footer>
     <div id="up">
         <span>
-            <img src="./images/up/arrow.png" alt="">
+            <img class="up-img" src="./images/up/arrow.png" alt="">
         </span>
     </div>
     <div class="modal-overlay">
